@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Executable
         run: |
-          pyinstaller --onefile pyqt-tests.py
+          pyinstaller --onefile pyqt-test.py
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
