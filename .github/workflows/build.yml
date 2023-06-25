@@ -27,10 +27,11 @@ jobs:
 
       - name: Build Executable
         run: |
-          pyinstaller --onefile pyqt-test.py
+          mkdir -p dist/${{ matrix.os }}
+          pyinstaller --onefile -n pyqt-test dist/${{ matrix.os }}/pyqt-test.py
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Executable
+          name: Executables
           path: dist/
