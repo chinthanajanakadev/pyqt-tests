@@ -13,7 +13,7 @@ if __name__ == '__main__':
     window.setGeometry(100, 100, 300, 200)
 
     # Create a button
-    button = QPushButton("Click Me", window)
+    button = QPushButton("Click Me here", window)
     button.setGeometry(100, 50, 100, 30)
     button.clicked.connect(button_click)
 
